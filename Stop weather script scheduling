@@ -1,0 +1,6 @@
+Shelly.call(
+   "Schedule.Create", 
+    { id: 3, enable: true, timespec: "@sunset+0h01m * * SUN,MON,TUE,WED,THU,FRI,SAT", calls: 
+[
+  {method:"Script.Stop", params:{id:1}}, 
+]});
